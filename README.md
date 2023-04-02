@@ -1,5 +1,6 @@
 ### **Course PHP306**  
-#### Using simple html, css, js, and of course PHP.  
+#### Using simple html, css, js, and of course PHP.
+(Will likely get merged into a repo of all my wilmu course work)
 
 - [x] Week 1 desc: Small welcome message to user input with POST  
 - [x] Week 2 desc: User can search for movie titles contained in a .txt file  
