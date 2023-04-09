@@ -1,5 +1,8 @@
 <!-- Header Import -->
-<?php include('include/header.php'); ?>
+<?php
+   $root = '../../';
+   include($root . 'include/header.php');
+?>
 
 <h2>
    Saved Cookies:
@@ -23,9 +26,9 @@
 ?>
 
 <!-- Button to return to index.php -->
-<p><a href="index.php" class="viewCookies">
+<p><a href="<?php echo $root; ?>Weekly/RandyOwensWeekThree/index.php">
    Return
 </a></p>
 
 <!-- Footer Import -->
-<?php include('include/footer.php'); ?>
+<?php include($root.'include/footer.php'); ?>

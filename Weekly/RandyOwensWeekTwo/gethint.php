@@ -5,8 +5,10 @@
    Determine and Create response for passed user input
    */
 
+   $root = '../../';
+
    // Read through movietitles.txt and generate an array for each line
-   $file = fopen('resources/movietitles.txt', 'r');
+   $file = fopen($root.'resources/movietitles.txt', 'r');
 
    // read file by line
    while($line = fgets($file)) {

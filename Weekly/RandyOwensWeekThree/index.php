@@ -22,40 +22,42 @@
 
 ?>
 
-
 <!-- Header Import -->
-<?php include('include/header.php'); ?>
+<?php
+   $root = '../../';
+   include($root . 'include/header.php');
+?>
 
-
+<h1>PHP Cookies</h1>
 <h2>Information to be stored as cookies:</h2>
 
 <!-- Form to get data from user on this page -->
-<form method='POST' action="" class="cookieForm">
+<form method='POST' action="">
 
    <!-- Styling -->
-   <div class="cookieFormContent">
+   <div>
 
       <!-- Name Input -->
-      <input type="text" name="name" placeholder="Name" class="formContent1" />
+      <input type="text" name="name" placeholder="Name" />
 
       <!-- Age Input -->
       <br />
-      <input type="text" name="age" placeholder="Age" class="formContent1" />
+      <input type="text" name="age" placeholder="Age" />
 
       <!-- Gender Input -->
       <br />
-      <input type="text" name="gender" placeholder="Gender" class="formContent1" />
+      <input type="text" name="gender" placeholder="Gender" />
 
       <!-- Submit -->
       <br />
-      <input type="submit" name="submit" value="Submit to be cookiefied" class="formContent1" />
+      <input type="submit" name="submit" value="Submit to be cookiefied" />
 
    </div>
 
 </form>
 
 <!-- Button to view all cookies -->
-<p><a href="ViewCookies.php" class="viewCookies">
+<p><a href="<?php echo $root; ?>Weekly/RandyOwensWeekThree/ViewCookies.php">
    View Cookies
 </a></p>
 
@@ -67,4 +69,4 @@
 </a></p>
 
 <!-- Footer Import -->
-<?php include('include/footer.php'); ?>
+<?php include($root.'include/footer.php'); ?>

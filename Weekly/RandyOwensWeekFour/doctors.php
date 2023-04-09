@@ -1,15 +1,18 @@
 <!-- Header Import -->
-<?php include('include/header.php'); ?>
+<?php
+   $root = '../../';
+   include($root . 'include/header.php');
+?>
+
 
 <!-- Use HTML Tables to rough sketch a MySQL Database design -->
-
 <h2>Database Design Structure for Doctor's Office</h2>
 
 <!-- Inside Body div=content -->
 
 <!-- Patients -->
 <h3>Patients</h3>
-<table class="table">
+<table class="table table-bordered table-dark">
     <thead>
         <tr>
             <th>patient_id</th>
@@ -43,7 +46,7 @@
 
 <!-- Medication_Dispense -->
 <h3>Medication_Dispense</h3>
-<table class="table">
+<table class="table table-bordered table-dark">
     <thead>
         <tr>
             <th>dispense_id</th>
@@ -73,7 +76,7 @@
 
 <!-- Billing_Info -->
 <h3>Billing_Info</h3>
-<table class="table">
+<table class="table table-bordered table-dark">
     <thead>
         <tr>
             <th>bill_id</th>
@@ -102,7 +105,7 @@
 
 <!-- Payments -->
 <h3>Payments</h3>
-<table class="table">
+<table class="table table-bordered table-dark">
     <thead>
         <tr>
             <th>payment_id</th>
@@ -131,4 +134,4 @@
 </table>
 
 <!-- Footer Import -->
-<?php include('include/footer.php'); ?>
+<?php include($root.'include/footer.php'); ?>
