@@ -6,9 +6,9 @@
 - [x] Week 2 desc: User can search for movie titles contained in a .txt file  
 - [x] Week 3 desc: Use cookies to save and load client data  
 - [x] Week 4 desc: Database Design - Basically No Project
-- [ ] Week 5 desc:  
+- [ ] Week 5 desc: Database Design - Small App interaction w/Database
 - [ ] Week 6 desc:  
 - [ ] Week 7 desc:  
 
 TODO:   
-- [ ] Combine every weeks objective into single web page
+- [x] Combine every weeks objective into single web page
