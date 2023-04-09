@@ -1,0 +1,37 @@
+create table Patients (
+    patient_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    name varchar(64) not null,
+    age int(3) not null,
+    address varchar(64) not null,
+    marital_status enum ('Married', 'Single', 'Widowed', 'Divorced', 'N/A') not null
+);
+
+create table Medication_Dispense (
+	 dispense_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    medication varchar(64) not null,
+    quantity int(11) not null,
+    date datetime not null,
+    patient_id int(11) not null,
+    FOREIGN KEY (patient_id) REFERENCES patients(patient_id)
+);
+
+create table Billing_Info ( 
+   bill_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+   amount_billed int(11) not null, 
+   amount_paid int(11) not null, 
+   date_issued datetime not null, 
+   date_paid datetime, 
+   patient_id int(11) not null, 
+   FOREIGN KEY (patient_id) REFERENCES patients(patient_id) 
+   dispense_id int(11) not null,
+   FOREIGN KEY (dispense_id) REFERENCES Medication_Dispense(dispense_id)
+);
+
+create table Payments (
+	payment_id int(11) not null PRIMARY KEY AUTO_INCREMENT,
+    amount_paid int(11),
+    remainder int(11),
+    date datetime not null,
+    bill_id int(11) not null,
+    FOREIGN KEY (bill_id) REFERENCES billing_info(patient_id)
+);
