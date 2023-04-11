@@ -98,6 +98,11 @@
    <button type="submit" class="btn btn-primary">View Patients</button>
 </form>
 
+<!-- Button to View Patients -->
+<form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/assistantLogout.php" method="" style="margin-top: 40px;">
+   <button type="submit" class="btn btn-primary">Logout</button>
+</form>
+
 <!-- Footer Import -->
 <?php
 include($root . 'include/footer.php');

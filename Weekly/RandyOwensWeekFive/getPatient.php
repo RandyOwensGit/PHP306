@@ -66,7 +66,7 @@
 
 <!-- Button to View Patients -->
 <form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/assistantLogin.php" method="">
-   <button type="submit" class="btn btn-primary">View Patients</button>
+   <button type="submit" class="btn btn-primary">Back</button>
 </form>
 
 <!-- Footer Import -->
