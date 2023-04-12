@@ -4,26 +4,7 @@
    $root = '../../';
    include($root.'include/header.php');
 
-   // If user does not have verified cookie validate login credentials
-   // and set verified cookie
-   if (!isset($_COOKIE['verified'])) {
-      $username = $_POST['username'];
-      $password = $_POST['password'];
-
-      // if login credentials are incorrect send back to login page
-      if ($username != "helper" || $password != "feelBetter") {
-         header("Location: ".$root."Weekly/RandyOwensWeekFive/assistantLogin.php?WrongLogin");
-         exit();
-      } 
-
-      // set cookie
-      define("NEW_TIME", 60 * 60 * 8);
-
-      // save 'verified' cookie
-      setcookie('verified', "verified", time() + NEW_TIME, $root.'');
-   }
-
-   include_once $root.'include/dbopen.inc.php';
+   echo '<script>console.log("Top of addPatient"); </script>';
 ?>
 
 <div>
@@ -33,7 +14,11 @@
 
 <!-- Form to Add new Patient into Database patients Table -->
 <div class="row mx-auto col-10 col-md-8 col-lg-6" style="margin-top: 75px;">
-   <form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/includes/addpatient.inc.php" method="POST">
+   <form action="<?php echo $root; ?>include/dbinsert.inc.php" method="POST">
+
+      <!-- Hidden Input 'table' -->
+      <input type="hidden" name="table" value="patients" />
+
       <div class="row mb-4">
          <!-- Name Input -->
          <div class="col">
@@ -86,7 +71,7 @@
       </div> <!-- END Marital Status Radio Group -->
 
       <!-- Submit button -->
-      <button type="submit" name="submit" class="btn btn-primary btn-block mb-4">
+      <button type="submit" class="btn btn-primary btn-block mb-4">
          Add Patient
       </button>
 
@@ -96,11 +81,6 @@
 <!-- Button to View Patients -->
 <form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/getPatient.php" method="">
    <button type="submit" class="btn btn-primary">View Patients</button>
-</form>
-
-<!-- Button to View Patients -->
-<form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/assistantLogout.php" method="" style="margin-top: 40px;">
-   <button type="submit" class="btn btn-primary">Logout</button>
 </form>
 
 <!-- Footer Import -->

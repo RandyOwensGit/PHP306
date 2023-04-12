@@ -37,7 +37,7 @@ and a JS Script to send user input to gethint.php
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekThree/index.php">Week Three</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekFour/doctors.php">Week Four</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekFive/assistantLogin.php">Week Five</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/index.php">Week Six</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/addPatient.php">Week Six</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekSeven/index.php">Week Seven</a>
          </div>
       </div> <!-- End Sidebar -->
@@ -51,7 +51,7 @@ and a JS Script to send user input to gethint.php
                <button class="btn btn-primary" id="sidebarToggle" style="margin-right: 15px;">Toggle Sidebar</button>
 
                <!-- Display Date/Time -->
-               Thanks for visiting on  
+               Current Time:
                <span  id="date" style="margin-left: 7px; margin-right: 5px;"></span>
                @ 
                <span id="time" style="margin-left: 5px;"></span>

@@ -1,7 +1,8 @@
 <?php
 
+   // open db connection
    $root = '../../../';
-   include_once $root.'Weekly/RandyOwensWeekFive/includes/dbh.inc.php';
+   include_once $root.'include/dbopen.inc.php';
 
    // POST values for database columns
    $name = $_POST['name'];
@@ -18,5 +19,8 @@
    mysqli_query($connection, $sql);
 
    header("Location: ".$root."Weekly/RandyOwensWeekFive/addPatient.php");
+
+   // close db connection
+   include_once $root.'include/dbclose.inc.php';
 
 ?>
