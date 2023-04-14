@@ -22,12 +22,12 @@ and a JS Script to send user input to gethint.php
 
    <body>
       <!-- Main Div -->
-      <div class="d-flex  bg-secondary" id="wrapper">
+      <div class="d-flex" id="wrapper">
 
          <!-- Sidebar -->
-         <div class="border-end bg-secondary" id="sidebar-wrapper">
+         <div class="border-end" id="sidebar-wrapper">
          <!-- Top left title -->
-         <div class="sidebar-heading border-bottom bg-secondary"><b>PHP 306</b></div>
+         <div class="sidebar-heading border-bottom"><b>PHP 306</b></div>
 
          <!-- Sidebar links -->
          <div class="list-group list-group-flush">

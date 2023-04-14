@@ -8,19 +8,16 @@ function queryDbForTable($tableName) {
 
    // open db connection
    $root = '../';
-   include_once 'C:/xampp/htdocs/projects/PHP306/include/dbopen.inc.php';
+   include 'C:/xampp/htdocs/projects/PHP306/include/dbopen.inc.php';
 
    // select statement
-   $sqlQuery = "SELECT * FROM " .$tableName. ";";
+   $sql = "SELECT * FROM " .$tableName. ";";
 
    // query database
-   $result = mysqli_query($connection, $sqlQuery);
+   $result = mysqli_query($connection, $sql);
 
    // determine database result 
    $resultCheck = mysqli_num_rows($result);
-
-    // close db connection
-    include_once $root."include/dbclose.inc.php";
 
    $tableData = array();
    if ($resultCheck > 0) {
