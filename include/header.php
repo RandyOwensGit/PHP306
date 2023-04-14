@@ -22,12 +22,12 @@ and a JS Script to send user input to gethint.php
 
    <body>
       <!-- Main Div -->
-      <div class="d-flex" id="wrapper">
+      <div class="d-flex  bg-secondary" id="wrapper">
 
          <!-- Sidebar -->
-         <div class="border-end bg-white" id="sidebar-wrapper">
+         <div class="border-end bg-secondary" id="sidebar-wrapper">
          <!-- Top left title -->
-         <div class="sidebar-heading border-bottom bg-light"><b>PHP 306</b></div>
+         <div class="sidebar-heading border-bottom bg-secondary"><b>PHP 306</b></div>
 
          <!-- Sidebar links -->
          <div class="list-group list-group-flush">
@@ -37,7 +37,7 @@ and a JS Script to send user input to gethint.php
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekThree/index.php">Week Three</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekFour/doctors.php">Week Four</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekFive/assistantLogin.php">Week Five</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/addPatient.php">Week Six</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/login.php">Week Six</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekSeven/index.php">Week Seven</a>
          </div>
       </div> <!-- End Sidebar -->
