@@ -26,9 +26,17 @@
    include_once $root.'include/dbopen.inc.php';
 ?>
 
-
 <div>
-   <h2 class="mb-3">Dashboard</h2>
+   <h3 class="mb-3">Dashboard</h2>
+   <!-- Logout -->
+   <form action="<?php echo $root; ?>Weekly/RandyOwensWeekSix/logout.php" method="" style="margin-top: 40px;">
+      <button type="submit" class="btn btn-primary">Logout</button>
+   </form>
+
+
+   <br>
+   <!-- Search Patient-->
+   <h2 class="mb-3">Search Patient... Soon</h2>
 
    <br><br><br>
    <!-- Enter Information -->
@@ -46,23 +54,14 @@
 
    <br><br><br>
    <!-- View Information -->
-   <h2 class="mb-3">View Records</h2>
    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
          <div class="navbar-header">
-            <a href="#" class="btn btn-primary navbar-btn" style="margin-left: 20px;">View Patients</a>
-            <a href="#" class="btn btn-primary navbar-btn" style="margin-left: 15px;">View Dispensed Medication Records</a>
-            <a href="#" class="btn btn-primary navbar-btn" style="margin-left: 15px;">View Bill Record</a>
-            <a href="#" class="btn btn-primary navbar-btn" style="margin-left: 15px;">View Payment Record</a>
+            <a href="#" class="btn btn-primary navbar-btn" style="margin-left: 20px;">View All Records</a>
          </div>
       </div>
    </nav>
 
-   <br><br><br>
-   <!-- Logout -->
-   <form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/assistantLogout.php" method="" style="margin-top: 40px;">
-      <button type="submit" class="btn btn-primary">Logout</button>
-   </form>
 
 </div>
 

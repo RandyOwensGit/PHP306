@@ -20,7 +20,7 @@
 
 <!-- Form to Add new Patient into Database patients Table -->
 <div class="row mx-auto col-10 col-md-8 col-lg-6" style="margin-top: 75px;">
-   <form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/addPatient.php" method="POST">
+   <form action="<?php echo $root; ?>Weekly/RandyOwensWeekSix/index.php" method="POST">
       <div class="row mb-4">
          <!-- Name Input -->
          <div class="col">
