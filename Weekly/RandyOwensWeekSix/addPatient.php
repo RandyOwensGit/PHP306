@@ -3,8 +3,7 @@
 
    $root = '../../';
    include($root.'include/header.php');
-
-   echo '<script>console.log("Top of addPatient"); </script>';
+   
 ?>
 
 <div>
@@ -80,7 +79,7 @@
 
 <!-- Button to View Patients -->
 <form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/getPatient.php" method="">
-   <button type="submit" class="btn btn-primary">View Patients</button>
+   <button type="submit" class="btn btn-primary">Dashboard</button>
 </form>
 
 <!-- Footer Import -->

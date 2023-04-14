@@ -4,6 +4,7 @@
    include($root.'include/header.php');
 
    include_once $root.'include/dbopen.inc.php';
+   include $root.'include/dbtable.inc.php';
 
    // Table name to populate page with
    $tableName = "patients";
@@ -18,7 +19,8 @@
 
    <?php
 
-      echo '<h2>View ${tableName}</h2>';
+      echo '<h2>View '.$tableName.'</h2>';
+      echo print_r($tableData);
 
       // check if not an empty array
       if ($tableData > 0) {
