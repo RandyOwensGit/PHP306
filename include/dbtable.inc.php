@@ -7,7 +7,7 @@
 function queryDbForTable($tableName) {
 
    // open db connection
-   $root = '../';
+   // $root = '../';
    include 'C:/xampp/htdocs/projects/PHP306/include/dbopen.inc.php';
 
    // select statement
