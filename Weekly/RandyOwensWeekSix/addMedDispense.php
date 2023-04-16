@@ -3,30 +3,12 @@
 
    $root = '../../';
    include($root.'include/header.php');
-   include $root . 'Weekly/RandyOwensWeekSix/dbFindRecord.php';
-
-   echo '<script>console.log("Top of addMedDispense"); </script>';
-
-   // Check if foreign ids are valid -- patient_id 
-   // check if submit has been entered
-   if (isset($_POST['submit'])) {
-      // select patient_id by this key
-      $valid = findPatientById($_POST['patient_id']);
-
-      echo '<script>console.log("Inside MedDispense Submit, $valid:'.$valid.'"); </script>';
-
-      // if patient_id is null then patient_id is invalid
-      if ($valid == null) {
-         echo "Invalid Patient ID Entered. Record Not Added.";
-      } {
-         echo "Record Added.";
-      }
-   }
 
 ?>
 
 <div>
    <h2>doctorWho Database - Add Dispensed Medication</h2>
+   <h5>Failed Insert will be notified with URL change</h5>
 </div>
 
 <!-- Form to Add new Patient into Database patients Table -->
@@ -36,8 +18,8 @@
       <!-- Hidden Input 'table' -->
       <input type="hidden" name="table" value="medication_dispense" />
 
-      <!-- Hidden Input for URL to return to this one -->
-      <input type="hidden" name="URL" value="Weekly/RandyOwensWeekSix/addMedDispense.php">
+      <!-- Hidden Input for URL -->
+      <input type="hidden" name="URL" value="Weekly/RandyOwensWeekSix/addMedDispense.php" />
 
       <div class="row mb-4">
          <!-- Medication Input -->

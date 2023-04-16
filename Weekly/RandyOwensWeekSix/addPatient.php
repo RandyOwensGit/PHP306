@@ -18,6 +18,9 @@
       <!-- Hidden Input 'table' -->
       <input type="hidden" name="table" value="patients" />
 
+      <!-- Hidden Input for URL -->
+      <input type="hidden" name="URL" value="Weekly/RandyOwensWeekSix/addPatient.php" />
+
       <div class="row mb-4">
          <!-- Name Input -->
          <div class="col">

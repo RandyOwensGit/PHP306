@@ -33,6 +33,9 @@
       <!-- Hidden Input 'table' -->
       <input type="hidden" name="table" value="billing_info" />
 
+      <!-- Hidden Input for URL -->
+      <input type="hidden" name="URL" value="Weekly/RandyOwensWeekSix/addBillingInfo.php" />
+
       <div class="row mb-4">
          <!-- Amount Billed Input -->
          <div class="col">

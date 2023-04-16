@@ -22,7 +22,7 @@
 ?>
 
 <div>
-   <h2>doctorWho Database - Add Dispensed Medication</h2>
+   <h2>doctorWho Database - Add Payment Record</h2>
 </div>
 
 
@@ -31,7 +31,10 @@
    <form action="<?php echo $root; ?>include/dbinsert.inc.php" method="POST">
 
       <!-- Hidden Input 'table' -->
-      <input type="hidden" name="table" value="medication_dispense" />
+      <input type="hidden" name="table" value="payments" />
+
+      <!-- Hidden Input for URL -->
+      <input type="hidden" name="URL" value="Weekly/RandyOwensWeekSix/addPayment.php" />
 
       <div class="row mb-4">
          <!-- Medication Input -->

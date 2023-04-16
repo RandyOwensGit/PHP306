@@ -47,7 +47,7 @@
    echo '<script>console.log("'.$sqlInsert.'"); </script>';
 
    // query database with INSERT
-   mysqli_query($connection, $sqlInsert);
+   $result = mysqli_query($connection, $sqlInsert);
 
    // return page to previous location
    header("Location: ".$root.$returnURL);
