@@ -5,6 +5,20 @@
    include($root.'include/header.php');
 
    echo '<script>console.log("Top of addMedDispense"); </script>';
+
+   // Check if foreign ids are valid -- patient_id && dispense_id
+   // check if submit has been entered
+   if (isset($_POST['submit'])) {
+      // select patient_id by this key
+      
+
+      // if patient_id is null then patient_id is invalid
+
+      // select dispense_id by this key
+
+      // if dispense_id is null then dispense_id is invalid
+   }
+
 ?>
 
 <div>
@@ -60,8 +74,8 @@
 </div>
 
 <!-- Button to View Patients -->
-<form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/getPatient.php" method="">
-   <button type="submit" class="btn btn-primary">View Patients</button>
+<form action="<?php echo $root; ?>Weekly/RandyOwensWeekSix/index.php" method="">
+   <button type="submit" class="btn btn-primary">Dashboard</button>
 </form>
 
 <!-- Footer Import -->

@@ -3,14 +3,31 @@
 
    $root = '../../';
    include($root.'include/header.php');
+   include $root . 'Weekly/RandyOwensWeekSix/dbFindRecord.php';
 
    echo '<script>console.log("Top of addMedDispense"); </script>';
+
+   // Check if foreign ids are valid -- patient_id 
+   // check if submit has been entered
+   if (isset($_POST['submit'])) {
+      // select patient_id by this key
+      $valid = findPatientById($_POST['patient_id']);
+
+      echo '<script>console.log("Inside MedDispense Submit, $valid:'.$valid.'"); </script>';
+
+      // if patient_id is null then patient_id is invalid
+      if ($valid == null) {
+         echo "Invalid Patient ID Entered. Record Not Added.";
+      } {
+         echo "Record Added.";
+      }
+   }
+
 ?>
 
 <div>
    <h2>doctorWho Database - Add Dispensed Medication</h2>
 </div>
-
 
 <!-- Form to Add new Patient into Database patients Table -->
 <div class="row mx-auto col-10 col-md-8 col-lg-6" style="margin-top: 75px;">
@@ -18,6 +35,9 @@
 
       <!-- Hidden Input 'table' -->
       <input type="hidden" name="table" value="medication_dispense" />
+
+      <!-- Hidden Input for URL to return to this one -->
+      <input type="hidden" name="URL" value="Weekly/RandyOwensWeekSix/addMedDispense.php">
 
       <div class="row mb-4">
          <!-- Medication Input -->
@@ -60,8 +80,8 @@
 </div>
 
 <!-- Button to View Patients -->
-<form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/getPatient.php" method="">
-   <button type="submit" class="btn btn-primary">View Patients</button>
+<form action="<?php echo $root; ?>Weekly/RandyOwensWeekSix/index.php" method="">
+   <button type="submit" class="btn btn-primary">Dashboard</button>
 </form>
 
 <!-- Footer Import -->

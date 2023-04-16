@@ -17,6 +17,10 @@
 
    // remove table name index
    unset($tableValues['table']);
+
+   // get URL to return too
+   $returnURL = $tableValues['URL'];
+   unset($tableValues['URL']);
       
    // add column heads to INSERT statement
    $lastElement = end($tableValues);
@@ -45,8 +49,8 @@
    // query database with INSERT
    mysqli_query($connection, $sqlInsert);
 
-   // return page to location
-   header("Location: ".$root."Weekly/RandyOwensWeekSix/index.php");
+   // return page to previous location
+   header("Location: ".$root.$returnURL);
 
    // close db connection
    include_once $root."include/dbclose.inc.php";

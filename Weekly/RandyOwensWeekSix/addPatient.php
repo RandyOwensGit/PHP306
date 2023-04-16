@@ -78,7 +78,7 @@
 </div>
 
 <!-- Button to View Patients -->
-<form action="<?php echo $root; ?>Weekly/RandyOwensWeekFive/getPatient.php" method="">
+<form action="<?php echo $root; ?>Weekly/RandyOwensWeekSix/index.php" method="">
    <button type="submit" class="btn btn-primary">Dashboard</button>
 </form>
 
