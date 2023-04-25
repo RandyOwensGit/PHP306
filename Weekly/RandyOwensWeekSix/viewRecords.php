@@ -15,12 +15,6 @@
          <button type="submit" name="medication_dispense" class="btn btn-primary">
             Dispensed Records
          </button>
-         <button type="submit" name="billing_info" class="btn btn-primary">
-            Billing Records
-         </button>
-         <button type="submit" name="payments" class="btn btn-primary">
-            Payment Records
-         </button>
       </form>
    </div>
 
@@ -38,12 +32,10 @@
       // determine table selected
       if (isset($_POST['patients'])) {
          buildTableFromDb($tableName = "patients");
+
       } else if (isset($_POST['medication_dispense'])) {
          buildTableFromDb("medication_dispense");
-      } else if (isset($_POST['billing_info'])) {
-         buildTableFromDb("billing_info");
-      } else if (isset($_POST['payments'])) {
-         buildTableFromDb("payments");
+
       }
 
    ?>

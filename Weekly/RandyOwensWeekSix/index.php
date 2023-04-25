@@ -30,7 +30,7 @@ include_once $root . 'include/dbopen.inc.php';
 
    <div class="d-flex flex-row">
       <div class="p-2">
-         <h2 class="mb-3" style="margin-left: 22px;">Dashboard</h2>
+         <h2 class="mb-3">Dashboard</h2>
       </div>
 
       <form action="<?php echo $root; ?>Weekly/RandyOwensWeekSix/logout.php" method="" class="p-2">
@@ -41,29 +41,24 @@ include_once $root . 'include/dbopen.inc.php';
    </div>
 
    <br>
-   <!-- Search Patient-->
-   <h2 class="mb-3" style="margin-left: 30px;">Search Patient... Soon</h2>
 
-
-   <br><br><br>
    <!-- Enter Information -->
-   <h2 class="mb-3" style="margin-left: 30px;">Add Entry</h2>
-   <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-         <div class="navbar-header">
-            <a href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/addPatient.php" class="btn btn-primary navbar-btn" style="margin-left: 20px;">Add Patients</a>
-            <a href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/addMedDispense.php" class="btn btn-primary navbar-btn" style="margin-left: 15px;">Add Dispensed Medication Record</a>
-            <a href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/AddBillingInfo.php" class="btn btn-primary navbar-btn" style="margin-left: 15px;">Add Bill Record</a>
-            <a href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/addPayment.php" class="btn btn-primary navbar-btn" style="margin-left: 15px;">Add Payment Record</a>
-         </div>
+   <div class="d-flex flex-row">
+      <div>
+         <h2>Add Entry: </h2>
       </div>
-   </nav>
 
-   <br><br><br>
+      <a href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/addPatient.php" class="btn btn-primary navbar-btn" style="margin-left: 20px;">Add Patients</a>
+      <a href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/addMedDispense.php" class="btn btn-primary navbar-btn" style="margin-left: 15px;">Add Dispensed Medication Record</a>
+   </div>
+
+   <br>
+
    <!-- View Information -->
+   <h2 class="mb-3">View Records: </h2>
    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
-         <form action="<?php echo $root; ?>Weekly/RandyOwensWeekSix/viewRecords.php" method="" class="navbar-header" style="margin-left: 20px;">
+         <form action="<?php echo $root; ?>Weekly/RandyOwensWeekSix/viewRecords.php" method="" class="navbar-header">
             <button type="submit" class="btn btn-primary navbar-btn">View ALL Records</button>
          </form>
       </div>
