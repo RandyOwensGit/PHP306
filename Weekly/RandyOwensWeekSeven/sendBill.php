@@ -2,6 +2,9 @@
 <?php
    $root = '../../';
    include($root . 'include/header.php');
+
+   include_once './include/dbopen.inc.php';
+
 ?>
 
 <div>
