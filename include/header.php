@@ -38,7 +38,7 @@ and a JS Script to send user input to gethint.php
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekFour/doctors.php">Week Four</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekFive/assistantLogin.php">Week Five</a>
             <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekSix/login.php">Week Six</a>
-            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekSeven/index.php">Week Seven</a>
+            <a class="list-group-item list-group-item-action list-group-item-light p-3" href="<?php echo $root; ?>Weekly/RandyOwensWeekSeven/sendBill.php">Week Seven</a>
          </div>
       </div> <!-- End Sidebar -->
 

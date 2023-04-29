@@ -1,8 +1,8 @@
 <!-- Header Import -->
 <?php
 
-   $root = '../../';
-   include($root.'include/header.php');
+$root = '../../';
+include($root . 'include/header.php');
 
 ?>
 
@@ -12,57 +12,82 @@
 
 <!-- Form to Add new Patient into Database patients Table -->
 <div class="row mx-auto col-10 col-md-8 col-lg-6" style="margin-top: 75px;">
-   <form action="<?php echo $root; ?>include/dbinsert.inc.php" method="POST">
+   <form action="./include/dbinsert.inc.php" method="POST">
 
-      <!-- Hidden Input 'table' -->
-      <input type="hidden" name="table" value="medication_dispense" />
+      <!-- Hidden Input 'table' -> Table Name from DB -->
+      <input type="hidden" name="table" value="customers" />
 
-      <!-- Hidden Input for URL -->
-      <input type="hidden" name="URL" value="Weekly/RandyOwensWeekSix/addMedDispense.php" />
-
+      <!-- Hidden Input for URL -> Will return to URL -->
+      <input type="hidden" name="URL" value="Weekly/RandyOwensWeekSeven/sendBill.php" />
+      
       <div class="row mb-4">
-         <!-- Medication Input -->
+         <!-- Customer First Name Input -->
          <div class="col">
             <div class="form-outline">
-               <input name="medication" type="text" id="medication" class="form-control" required  />
-               <label class="form-label" for="medication">Medication</label>
+               <input name="customer_F_Name" type="text" id="customer_F_Name" class="form-control" required />
+               <label class="form-label" for="customer_F_Name">First Name</label>
             </div>
-         </div> <!-- END Medication Input -->
+         </div> <!-- END Customer First Name Input -->
+         
+         <!-- Customer Last Name Input -->
+         <div class="col">
+            <div class="form-outline">
+               <input name="customer_L_Name" type="text" id="customer_L_Name" class="form-control" required />
+               <label class="form-label" for="customer_L_Name">Last Name</label>
+            </div>
+         </div> <!-- END Customer Last Name Input -->
 
-         <!-- Quantity Input -->
+         <!-- Customer Title Select -->
+         <!-- 'Mr.', 'Mrs.', 'Ms.', 'Miss', 'Dr.' -->
          <div class="col">
             <div class="form-outline">
-               <input name="quantity" type="number" id="quantity" class="form-control" required  />
-               <label class="form-label" for="quantity">Quantity</label>
+               <select class="form-select" aria-label="Select Customer Title" id="customer_Title" name="customer_Title" required>
+                  <option select>Select Customer Title</option>
+                  <option value="Mr.">Mr.</option>
+                  <option value="Mrs.">Mrs.</option>
+                  <option value="Ms.">Ms.</option>
+                  <option value="Miss">Miss</option>
+                  <option value="Dr.">Dr.</option>
+               </select>
             </div>
-         </div> <!-- END Quantity Input -->
+         </div> <!-- END Customer Title Select -->
       </div>
 
-      <!-- Address input -->
-      <div class="form-outline mb-4">
-         <input name="date" type="date" id="date" class="form-control" required
-                min="2023-01-01" max="2023-12-31"
-         />
-         <label class="form-label" for="date">Date</label>
-      </div> <!-- END Address input -->
+      <!-- Street Address input -->
+      <div class="form-outline">
+         <input name="street_address" type="text" id="street_address" class="form-control" required />
+         <label class="form-label" for="street_address">Street Address</label>
+      </div><!-- END Street Address input -->
 
-      <!-- Patient_ID input -->
-      <div class="form-outline mb-4">
-         <input name="patient_id" type="number" id="patient_id" class="form-control" required />
-         <label class="form-label" for="patient_id">Patient ID</label>
-      </div> <!-- END Patient_ID input -->
+      <!-- City State Zip input -->
+      <div class="form-outline">
+         <input name="city_State_Zip" type="text" id="city_State_Zip" class="form-control" required />
+         <label class="form-label" for="city_State_Zip">City & State & Zip</label>
+      </div><!-- END City State Zip input -->
+
+      <!-- Phone input -->
+      <div class="form-outline">
+         <input name="customer_Phone" type="number" id="customer_Phone" class="form-control" required />
+         <label class="form-label" for="customer_Phone">Phone #</label>
+      </div><!-- END Phone input -->
+
+      <!-- Email input -->
+      <div class="form-outline">
+         <input name="customer_Email" type="email" id="customer_Email" class="form-control" required />
+         <label class="form-label" for="customer_Email">Email</label>
+      </div><!-- END Email input -->
 
       <!-- Submit button -->
       <button type="submit" class="btn btn-primary btn-block mb-4">
-         Add Dispensed Medication
+         Add Customer
       </button>
 
    </form>
 </div>
 
-<!-- Button to View Patients -->
-<form action="<?php echo $root; ?>Weekly/RandyOwensWeekSix/index.php" method="">
-   <button type="submit" class="btn btn-primary">Dashboard</button>
+<!-- Return Button -->
+<form action="<?php echo $root; ?>Weekly/RandyOwensWeekSeven/sendBill.php" method="">
+   <button type="submit" class="btn btn-primary">Return</button>
 </form>
 
 <!-- Footer Import -->

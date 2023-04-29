@@ -2,7 +2,7 @@ CREATE TABLE customers (
 	customer_ID int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
     customer_L_Name varchar(50) NOT NULL,
     customer_F_Name varchar(50) NOT NULL,
-    customer_Title enum ('Mr.', 'Mrs.', 'Ms.', 'Miss', 'Dr.'),
+    customer_Title varchar(10) NOT NULL,
     street_address varchar(50) NOT NULL,
     city_State_Zip varchar(50) NOT NULL,
     customer_Phone int(11) NOT NULL,

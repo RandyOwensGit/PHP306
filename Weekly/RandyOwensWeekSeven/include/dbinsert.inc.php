@@ -4,9 +4,11 @@
    * Use POST values to build sql INSERT statement
    */
 
+   echo '<script>console.log("Inside the dbinsert."); </script>';
+
    // open db connection
    $root = '../';
-   include_once $root.'include/dbopen.inc.php';
+   include_once './dbopen.inc.php';
 
    // assign post values
    $tableValues = $_POST;
@@ -50,9 +52,9 @@
    $result = mysqli_query($connection, $sqlInsert);
 
    // return page to previous location
-   header("Location: ".$root.$returnURL);
+   // header("Location: "."../sendBill.php");
 
    // close db connection
-   include_once $root."include/dbclose.inc.php";
+   include_once './dbclose.inc.php';
 
 ?>
