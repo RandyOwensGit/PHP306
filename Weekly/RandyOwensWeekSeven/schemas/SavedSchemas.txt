@@ -17,6 +17,5 @@ CREATE TABLE billing (
    bill_date datetime NOT NULL,
    date_paid datetime NOT NULL,
    customer_ID int(11) NOT NULL,
-   customer_L_Name varchar(50) NOT NULL,
    FOREIGN KEY (customer_ID) REFERENCES customers(customer_ID)
 );

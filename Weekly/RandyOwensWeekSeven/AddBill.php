@@ -1,8 +1,8 @@
 <!-- Header Import -->
 <?php
 
-$root = '../../';
-include($root . 'include/header.php');
+   $root = '../../';
+   include($root . 'include/header.php');
 
 ?>
 
@@ -29,21 +29,13 @@ include($root . 'include/header.php');
             </div>
          </div> <!-- END Customer ID Input -->
 
-         <!-- Customer Last Name Input -->
+         <!-- Bill Total  Input -->
          <div class="col">
             <div class="form-outline">
-               <input name="customer_L_Name" type="text" id="customer_L_Name" class="form-control" required />
-               <label class="form-label" for="customer_L_Name">Last Name</label>
+               <input name="customer_bill" type="number" id="customer_bill" class="form-control" required />
+               <label class="form-label" for="customer_bill">Bill Total</label>
             </div>
-         </div> <!-- END Customer Last Name Input -->
-
-         <!-- Bill ID Input -->
-         <div class="col">
-            <div class="form-outline">
-               <input name="customer_Bill" type="number" id="customer_Bill" class="form-control" required />
-               <label class="form-label" for="customer_Bill">Bill ID #</label>
-            </div>
-         </div> <!-- END Bill ID Input -->
+         </div> <!-- END Bill Total Input -->
       </div>
 
       <!-- Service input -->

@@ -1,7 +1,7 @@
 <!-- Header Import -->
 <?php
-$root = '../../';
-include($root . 'include/header.php');
+   $root = '../../';
+   include($root . 'include/header.php');
 
 ?>
 
@@ -9,7 +9,7 @@ include($root . 'include/header.php');
    <h2>Landscape ~ Billing</h2>
 
    <!-- Enter Information -->
-   <div class="d-flex flex-row">
+   <div class="d-flex flex-row" style="margin-top: 25px;">
       <div>
          <h2>Add Entry: </h2>
       </div>
@@ -19,7 +19,7 @@ include($root . 'include/header.php');
    </div>
 
    <!-- View Information -->
-   <h2 class="mb-3">View Records: </h2>
+   <h2 class="mb-3" style="margin-top: 25px;">View Records: </h2>
    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
          <form action="<?php echo $root; ?>Weekly/RandyOwensWeekSeven/CustomerBilling.php" method="" class="navbar-header">

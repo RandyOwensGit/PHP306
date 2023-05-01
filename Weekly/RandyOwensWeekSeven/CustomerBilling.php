@@ -56,13 +56,16 @@ include_once './include/dbopen.inc.php';
                   <td>' . $row["customer_Phone"] . '</td>
                   <td>' . $row["customer_Email"] . '</td>
                   <td>
-                     <a 
-                        href="<?php echo $root; ?>Weekly/RandyOwensWeekSeven/addBill.php" 
-                        class="btn btn-primary navbar-btn" 
-                        style="margin-left: 15px;"
-                     >
-                        Generate Report
-                     </a>
+                     <form action="./GenerateReport.php" method="POST">
+                        <button
+                           type="submit" 
+                           class="btn btn-primary" 
+                           value='.$row["customer_ID"].'
+                           name="customerId"
+                        >
+                           Generate Bill Report
+                        </button>
+                     </form>
                   </td>
                </tr>
             ';
